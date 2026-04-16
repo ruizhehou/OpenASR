@@ -14,8 +14,8 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         setupHotkey()
         setupMainWindowObserver()
 
-        // Prevent showing in Dock (agent app)
-        NSApp.setActivationPolicy(.accessory)
+        NSApp.setActivationPolicy(.regular)
+        openMainWindow()
     }
 
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
