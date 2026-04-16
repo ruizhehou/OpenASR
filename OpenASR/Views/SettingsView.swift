@@ -34,7 +34,6 @@ struct GeneralTab: View {
                     }
                 }
                 Toggle("Translate to English", isOn: $vm.translateToEnglish)
-                    .disabled(!vm.selectedModel.supportsTranslation)
                 Toggle("Show timestamps", isOn: $vm.showTimestamps)
             }
             Section("Clipboard") {
