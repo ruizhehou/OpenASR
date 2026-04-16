@@ -37,27 +37,39 @@
                                                    translate:(BOOL)translate {
     if (!_ctx || count <= 0) return nil;
 
-    struct whisper_full_params params = whisper_full_default_params(WHISPER_SAMPLING_GREEDY);
+    struct whisper_full_params params = whisper_full_default_params(WHISPER_SAMPLING_BEAM_SEARCH);
 
-    // Language
+    // Language — langStr must outlive params since params.language points into it
     std::string langStr = [language UTF8String];
+    const char *langCStr = nullptr;
     if (langStr == "auto") {
         params.language = nullptr;  // auto-detect
         params.detect_language = true;
     } else {
-        params.language = langStr.c_str();
+        langCStr = langStr.c_str();
+        params.language = langCStr;
         params.detect_language = false;
     }
 
-    params.translate = translate;
-    params.print_realtime = false;
-    params.print_progress = false;
+    params.translate        = translate;
+    params.print_realtime   = false;
+    params.print_progress   = false;
     params.print_timestamps = true;
-    params.print_special = false;
-    params.no_context = true;
-    params.single_segment = false;
-    params.n_threads = (int)[[NSProcessInfo processInfo] processorCount];
+    params.print_special    = false;
+    params.no_context       = true;
+    params.single_segment   = false;
+    params.n_threads        = (int)[[NSProcessInfo processInfo] processorCount];
     params.token_timestamps = false;
+
+    // Relax filtering thresholds so quiet/short speech still produces segments.
+    // Default no_speech_thold=0.6 is very aggressive — lower it to reduce false silence detection.
+    params.no_speech_thold = 0.3f;
+    // Default logprob_thold=-1.0 filters low-probability segments — lower to keep more output.
+    params.logprob_thold   = -2.0f;
+    // Default entropy_thold=2.4 filters high-entropy (confused) output — raise to be more permissive.
+    params.entropy_thold   = 3.0f;
+    // Suppress blank-only segments but keep real speech.
+    params.suppress_blank  = true;
 
     int result = whisper_full(_ctx, params, samples, (int)count);
     if (result != 0) {
