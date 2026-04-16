@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B629CF5B960139FD003D8F /* URL+FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65B89360FEA2E6E285DED97 /* URL+FileType.swift */; };
+		04078A8F726893D7D51D3CDE /* AVAudioPCMBuffer+Float32.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDB9861050179F448C8EAB /* AVAudioPCMBuffer+Float32.swift */; };
+		07F6442589C487107AC005F4 /* TranscriptionRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA24B7229D42B2D7464D29E /* TranscriptionRecord.swift */; };
+		173EDAC5255658F06094399A /* FileDropZoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609CB6FEAFAF1CB7A8D554D4 /* FileDropZoneView.swift */; };
+		1CA1F7AA0E1A6F10B4DAE5F6 /* HistoryStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FAA531014C305046F0D4E05 /* HistoryStoreTests.swift */; };
+		255B10CD8B9D75E467676CB2 /* TranscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF22C3284BDE0DD49A373A7B /* TranscriptionView.swift */; };
+		268A206F6A357359D144C969 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB9193E36E5297E2C12963D /* AppState.swift */; };
+		28999B89ED6B77C21F1A129A /* WhisperBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 68075EBF786B670E0E5A26EE /* WhisperBridge.mm */; };
+		33A5D8614A206BBF96859A22 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544F01CCB60E32690354C0C4 /* HistoryViewModel.swift */; };
+		47EA6C539D72250FB9201E4A /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11863B551D91A13A676D9395 /* HistoryStore.swift */; };
+		4AB7AE238228B01B877235A3 /* ModelManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326D8E123F6A2B15863E393F /* ModelManagerView.swift */; };
+		690FF5FFF22E384BBE523A3C /* AudioCaptureEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4209E26FC4C7254D8FEF88A /* AudioCaptureEngine.swift */; };
+		76895BD48085D6AE45E72481 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90DB849D2C8E627C94F0F84 /* MenuBarView.swift */; };
+		7F754320FD292D3D6560A01E /* TranscriptionSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B44044397C240C1F8A31A7B /* TranscriptionSegment.swift */; };
+		803C705C64CF3F6A6B20859C /* OpenASRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CD4872B8082ECDD9ECE1032 /* OpenASRApp.swift */; };
+		8227D03E2274B81C62774A6C /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAE22B7BAF5EF32D88350F7 /* Logging.swift */; };
+		8611360484837C648DC1AB5F /* HotkeyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB92625EACB4D3A686BF30C2 /* HotkeyService.swift */; };
+		8D6EE835081C940DCF088DD5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE3402D425A71F055EAE987 /* SettingsView.swift */; };
+		8DD227CCEC55AC0D9E23F57A /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1787C1038622550C979B6 /* HistoryView.swift */; };
+		91948411915041ACF87D0731 /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD9013ADBD5A6D78E686D27 /* WaveformView.swift */; };
+		96505C1D54EC64C15C5CD5F1 /* FileTranscriptionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74474EC3BF73F4AFB71E8EC /* FileTranscriptionEngine.swift */; };
+		A1780988FE3841F22F327C6A /* StatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89C83454BFD173CD4F0DDF0 /* StatusBadge.swift */; };
+		A996CDFF54FC50DAADBB6845 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEFBD3A0CDF457020A6D7DC /* AppDelegate.swift */; };
+		B02BA451A04C5D431FDB4136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94804E005A147BAF758343E0 /* Assets.xcassets */; };
+		B129FBCFDE34C2E4C36C33A1 /* WhisperModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31FF4917F00C1242F3A2C2 /* WhisperModel.swift */; };
+		B4E40B79E376054FEC671755 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3A9305DE2E9153D06E5D4C /* SettingsViewModel.swift */; };
+		B87365B6547DC77AE04BA67E /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA4F6EDEC9AD7721EE5AC65 /* ModelManager.swift */; };
+		BAA4213D7F52844A73353515 /* WhisperEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 317C380025299A239D49BD5D /* WhisperEngine.swift */; };
+		BF995BF6A5D3F697FFDD8490 /* ModelManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C05F5F308247485A407E9BB /* ModelManagerTests.swift */; };
+		E0A931040FEC938691B68039 /* Date+Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129BE4FDE441D33590D26311 /* Date+Formatting.swift */; };
+		E20DE601174690C095332CC1 /* ClipboardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF29E0DD35CA0A5A91F54F91 /* ClipboardService.swift */; };
+		EC284AD90368D68EF1FBF1A9 /* TranscriptionSegmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE598EE91C2B243AC219516 /* TranscriptionSegmentTests.swift */; };
+		F28E53CB58086ADDD2D0FB2D /* MainWindowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8671CE8AFCB8F4703B8924A /* MainWindowView.swift */; };
+		F360192C60B862EF75F33033 /* CopyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3190B77A1D54E46BAF76FF7 /* CopyButton.swift */; };
+		F5FA2F4AE59B736E5622840A /* TranscriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1875A884D7157D439562F3DF /* TranscriptionViewModel.swift */; };
+		F6AD22A740B0A705E1124678 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176368D5494CDA2ABDC87437 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E054021E5C763B928E0DBE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7123A56D86094F4616F5BF3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 134BBC3C26E803A4345BB647;
+			remoteInfo = OpenASR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11863B551D91A13A676D9395 /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
+		129BE4FDE441D33590D26311 /* Date+Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Formatting.swift"; sourceTree = "<group>"; };
+		176368D5494CDA2ABDC87437 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1875A884D7157D439562F3DF /* TranscriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionViewModel.swift; sourceTree = "<group>"; };
+		1DA4F6EDEC9AD7721EE5AC65 /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
+		2CAE22B7BAF5EF32D88350F7 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		317C380025299A239D49BD5D /* WhisperEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperEngine.swift; sourceTree = "<group>"; };
+		326D8E123F6A2B15863E393F /* ModelManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManagerView.swift; sourceTree = "<group>"; };
+		46AEA7FFBA23E962DAA737C0 /* OpenASR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OpenASR.entitlements; sourceTree = "<group>"; };
+		4DD9013ADBD5A6D78E686D27 /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
+		544F01CCB60E32690354C0C4 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		609CB6FEAFAF1CB7A8D554D4 /* FileDropZoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDropZoneView.swift; sourceTree = "<group>"; };
+		68075EBF786B670E0E5A26EE /* WhisperBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WhisperBridge.mm; sourceTree = "<group>"; };
+		79DDB9861050179F448C8EAB /* AVAudioPCMBuffer+Float32.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVAudioPCMBuffer+Float32.swift"; sourceTree = "<group>"; };
+		7AE598EE91C2B243AC219516 /* TranscriptionSegmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionSegmentTests.swift; sourceTree = "<group>"; };
+		7CD4872B8082ECDD9ECE1032 /* OpenASRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenASRApp.swift; sourceTree = "<group>"; };
+		7EA24B7229D42B2D7464D29E /* TranscriptionRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionRecord.swift; sourceTree = "<group>"; };
+		7FAA531014C305046F0D4E05 /* HistoryStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreTests.swift; sourceTree = "<group>"; };
+		80F61D3B74EA828232C53D78 /* WhisperBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhisperBridge.h; sourceTree = "<group>"; };
+		887992F09EB96E3F10784048 /* OpenASR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenASR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB9193E36E5297E2C12963D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		94804E005A147BAF758343E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B44044397C240C1F8A31A7B /* TranscriptionSegment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionSegment.swift; sourceTree = "<group>"; };
+		9C05F5F308247485A407E9BB /* ModelManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManagerTests.swift; sourceTree = "<group>"; };
+		9EEFBD3A0CDF457020A6D7DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9F1F1109FC48B5BE60ADCCAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A90DB849D2C8E627C94F0F84 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		AB31FF4917F00C1242F3A2C2 /* WhisperModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperModel.swift; sourceTree = "<group>"; };
+		B6A1787C1038622550C979B6 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		B74474EC3BF73F4AFB71E8EC /* FileTranscriptionEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileTranscriptionEngine.swift; sourceTree = "<group>"; };
+		B8671CE8AFCB8F4703B8924A /* MainWindowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowView.swift; sourceTree = "<group>"; };
+		BDE3402D425A71F055EAE987 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BF29E0DD35CA0A5A91F54F91 /* ClipboardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipboardService.swift; sourceTree = "<group>"; };
+		CC3A9305DE2E9153D06E5D4C /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		D3FD09AFE074B505EB77244C /* OpenASRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenASRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4209E26FC4C7254D8FEF88A /* AudioCaptureEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioCaptureEngine.swift; sourceTree = "<group>"; };
+		DB92625EACB4D3A686BF30C2 /* HotkeyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotkeyService.swift; sourceTree = "<group>"; };
+		DF22C3284BDE0DD49A373A7B /* TranscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionView.swift; sourceTree = "<group>"; };
+		E3572D4532A9927C7A464BB0 /* OpenASR-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenASR-Bridging-Header.h"; sourceTree = "<group>"; };
+		E65B89360FEA2E6E285DED97 /* URL+FileType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+FileType.swift"; sourceTree = "<group>"; };
+		E89C83454BFD173CD4F0DDF0 /* StatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBadge.swift; sourceTree = "<group>"; };
+		F3190B77A1D54E46BAF76FF7 /* CopyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		08313573EE1418A723728759 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				E3572D4532A9927C7A464BB0 /* OpenASR-Bridging-Header.h */,
+				80F61D3B74EA828232C53D78 /* WhisperBridge.h */,
+				68075EBF786B670E0E5A26EE /* WhisperBridge.mm */,
+			);
+			path = Bridge;
+			sourceTree = "<group>";
+		};
+		5A26AFB1637A0A31F0C22C5A /* OpenASRTests */ = {
+			isa = PBXGroup;
+			children = (
+				7FAA531014C305046F0D4E05 /* HistoryStoreTests.swift */,
+				9C05F5F308247485A407E9BB /* ModelManagerTests.swift */,
+				7AE598EE91C2B243AC219516 /* TranscriptionSegmentTests.swift */,
+			);
+			path = OpenASRTests;
+			sourceTree = "<group>";
+		};
+		5A7187F847932E150881A443 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8BB9193E36E5297E2C12963D /* AppState.swift */,
+				7EA24B7229D42B2D7464D29E /* TranscriptionRecord.swift */,
+				9B44044397C240C1F8A31A7B /* TranscriptionSegment.swift */,
+				AB31FF4917F00C1242F3A2C2 /* WhisperModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5CD17826496E4B3536D3579F /* OpenASR */ = {
+			isa = PBXGroup;
+			children = (
+				F6589F5C996F667108F8EF46 /* App */,
+				08313573EE1418A723728759 /* Bridge */,
+				F9E0F1BD3739D63E5E3F3913 /* Engine */,
+				5A7187F847932E150881A443 /* Models */,
+				94E758CFAEEC9196889BC69A /* Resources */,
+				A31ECD1F53BFD2DF4D738600 /* Services */,
+				85BB67AECAEE7E66D0488E96 /* Support */,
+				BDC219712858581E942E01B2 /* ViewModels */,
+				5FD065A292714DAB4CBE0DA0 /* Views */,
+			);
+			path = OpenASR;
+			sourceTree = "<group>";
+		};
+		5FD065A292714DAB4CBE0DA0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				609CB6FEAFAF1CB7A8D554D4 /* FileDropZoneView.swift */,
+				B6A1787C1038622550C979B6 /* HistoryView.swift */,
+				B8671CE8AFCB8F4703B8924A /* MainWindowView.swift */,
+				A90DB849D2C8E627C94F0F84 /* MenuBarView.swift */,
+				326D8E123F6A2B15863E393F /* ModelManagerView.swift */,
+				BDE3402D425A71F055EAE987 /* SettingsView.swift */,
+				DF22C3284BDE0DD49A373A7B /* TranscriptionView.swift */,
+				7234E1ADDBEBBFD476B293EB /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7234E1ADDBEBBFD476B293EB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F3190B77A1D54E46BAF76FF7 /* CopyButton.swift */,
+				E89C83454BFD173CD4F0DDF0 /* StatusBadge.swift */,
+				4DD9013ADBD5A6D78E686D27 /* WaveformView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		85BB67AECAEE7E66D0488E96 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				176368D5494CDA2ABDC87437 /* Constants.swift */,
+				2CAE22B7BAF5EF32D88350F7 /* Logging.swift */,
+				CD4B6CCEE83D6CA9911A129F /* Extensions */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		94E758CFAEEC9196889BC69A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94804E005A147BAF758343E0 /* Assets.xcassets */,
+				9F1F1109FC48B5BE60ADCCAB /* Info.plist */,
+				46AEA7FFBA23E962DAA737C0 /* OpenASR.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9EC4443DE6A967C881AC9D93 = {
+			isa = PBXGroup;
+			children = (
+				5CD17826496E4B3536D3579F /* OpenASR */,
+				5A26AFB1637A0A31F0C22C5A /* OpenASRTests */,
+				E0D9915DA6C030DE663B0AF4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A31ECD1F53BFD2DF4D738600 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BF29E0DD35CA0A5A91F54F91 /* ClipboardService.swift */,
+				11863B551D91A13A676D9395 /* HistoryStore.swift */,
+				DB92625EACB4D3A686BF30C2 /* HotkeyService.swift */,
+				1DA4F6EDEC9AD7721EE5AC65 /* ModelManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		BDC219712858581E942E01B2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				544F01CCB60E32690354C0C4 /* HistoryViewModel.swift */,
+				CC3A9305DE2E9153D06E5D4C /* SettingsViewModel.swift */,
+				1875A884D7157D439562F3DF /* TranscriptionViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CD4B6CCEE83D6CA9911A129F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				79DDB9861050179F448C8EAB /* AVAudioPCMBuffer+Float32.swift */,
+				129BE4FDE441D33590D26311 /* Date+Formatting.swift */,
+				E65B89360FEA2E6E285DED97 /* URL+FileType.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E0D9915DA6C030DE663B0AF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				887992F09EB96E3F10784048 /* OpenASR.app */,
+				D3FD09AFE074B505EB77244C /* OpenASRTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6589F5C996F667108F8EF46 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9EEFBD3A0CDF457020A6D7DC /* AppDelegate.swift */,
+				7CD4872B8082ECDD9ECE1032 /* OpenASRApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F9E0F1BD3739D63E5E3F3913 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				D4209E26FC4C7254D8FEF88A /* AudioCaptureEngine.swift */,
+				B74474EC3BF73F4AFB71E8EC /* FileTranscriptionEngine.swift */,
+				317C380025299A239D49BD5D /* WhisperEngine.swift */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		134BBC3C26E803A4345BB647 /* OpenASR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58DC7ADBEC11032A3B7374B6 /* Build configuration list for PBXNativeTarget "OpenASR" */;
+			buildPhases = (
+				33B2E0F1AB341C8F639E9161 /* Sources */,
+				911D21D790049F03F593207A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenASR;
+			packageProductDependencies = (
+			);
+			productName = OpenASR;
+			productReference = 887992F09EB96E3F10784048 /* OpenASR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F53174C82D943D08C0E07DDE /* OpenASRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8667C49D38A39C000C1D2ABF /* Build configuration list for PBXNativeTarget "OpenASRTests" */;
+			buildPhases = (
+				A5674E53AE020EE4EAB952A3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2A23CFD34A4D3178BB8A68D /* PBXTargetDependency */,
+			);
+			name = OpenASRTests;
+			packageProductDependencies = (
+			);
+			productName = OpenASRTests;
+			productReference = D3FD09AFE074B505EB77244C /* OpenASRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7123A56D86094F4616F5BF3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					134BBC3C26E803A4345BB647 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					F53174C82D943D08C0E07DDE = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 50D9F9E5A39559F27DFF27E7 /* Build configuration list for PBXProject "OpenASR" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 9EC4443DE6A967C881AC9D93;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E0D9915DA6C030DE663B0AF4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				134BBC3C26E803A4345BB647 /* OpenASR */,
+				F53174C82D943D08C0E07DDE /* OpenASRTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		911D21D790049F03F593207A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B02BA451A04C5D431FDB4136 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33B2E0F1AB341C8F639E9161 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04078A8F726893D7D51D3CDE /* AVAudioPCMBuffer+Float32.swift in Sources */,
+				A996CDFF54FC50DAADBB6845 /* AppDelegate.swift in Sources */,
+				268A206F6A357359D144C969 /* AppState.swift in Sources */,
+				690FF5FFF22E384BBE523A3C /* AudioCaptureEngine.swift in Sources */,
+				E20DE601174690C095332CC1 /* ClipboardService.swift in Sources */,
+				F6AD22A740B0A705E1124678 /* Constants.swift in Sources */,
+				F360192C60B862EF75F33033 /* CopyButton.swift in Sources */,
+				E0A931040FEC938691B68039 /* Date+Formatting.swift in Sources */,
+				173EDAC5255658F06094399A /* FileDropZoneView.swift in Sources */,
+				96505C1D54EC64C15C5CD5F1 /* FileTranscriptionEngine.swift in Sources */,
+				47EA6C539D72250FB9201E4A /* HistoryStore.swift in Sources */,
+				8DD227CCEC55AC0D9E23F57A /* HistoryView.swift in Sources */,
+				33A5D8614A206BBF96859A22 /* HistoryViewModel.swift in Sources */,
+				8611360484837C648DC1AB5F /* HotkeyService.swift in Sources */,
+				8227D03E2274B81C62774A6C /* Logging.swift in Sources */,
+				F28E53CB58086ADDD2D0FB2D /* MainWindowView.swift in Sources */,
+				76895BD48085D6AE45E72481 /* MenuBarView.swift in Sources */,
+				B87365B6547DC77AE04BA67E /* ModelManager.swift in Sources */,
+				4AB7AE238228B01B877235A3 /* ModelManagerView.swift in Sources */,
+				803C705C64CF3F6A6B20859C /* OpenASRApp.swift in Sources */,
+				8D6EE835081C940DCF088DD5 /* SettingsView.swift in Sources */,
+				B4E40B79E376054FEC671755 /* SettingsViewModel.swift in Sources */,
+				A1780988FE3841F22F327C6A /* StatusBadge.swift in Sources */,
+				07F6442589C487107AC005F4 /* TranscriptionRecord.swift in Sources */,
+				7F754320FD292D3D6560A01E /* TranscriptionSegment.swift in Sources */,
+				255B10CD8B9D75E467676CB2 /* TranscriptionView.swift in Sources */,
+				F5FA2F4AE59B736E5622840A /* TranscriptionViewModel.swift in Sources */,
+				00B629CF5B960139FD003D8F /* URL+FileType.swift in Sources */,
+				91948411915041ACF87D0731 /* WaveformView.swift in Sources */,
+				28999B89ED6B77C21F1A129A /* WhisperBridge.mm in Sources */,
+				BAA4213D7F52844A73353515 /* WhisperEngine.swift in Sources */,
+				B129FBCFDE34C2E4C36C33A1 /* WhisperModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5674E53AE020EE4EAB952A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CA1F7AA0E1A6F10B4DAE5F6 /* HistoryStoreTests.swift in Sources */,
+				BF995BF6A5D3F697FFDD8490 /* ModelManagerTests.swift in Sources */,
+				EC284AD90368D68EF1FBF1A9 /* TranscriptionSegmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F2A23CFD34A4D3178BB8A68D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 134BBC3C26E803A4345BB647 /* OpenASR */;
+			targetProxy = 2E054021E5C763B928E0DBE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E811410D071516C58912C80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OpenASR/Resources/OpenASR.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Packages/whisper.cpp/include",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/ggml/include",
+				);
+				INFOPLIST_FILE = OpenASR/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/src",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-metal",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-cpu",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-blas",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/src",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-metal",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-cpu",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-blas",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_LDFLAGS = (
+					"-lwhisper",
+					"-lggml",
+					"-lggml-base",
+					"-lggml-cpu",
+					"-lggml-metal",
+					"-lggml-blas",
+					"-rpath",
+					"@executable_path/../Frameworks",
+					"-framework",
+					Accelerate,
+					"-framework",
+					Metal,
+					"-framework",
+					MetalPerformanceShaders,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openasr.app;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenASR/Bridge/OpenASR-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		1F0BAFAD01F51C0BF657C805 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		5EE994CBD08B3FD8FD79E9FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = OpenASR/Resources/OpenASR.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Packages/whisper.cpp/include",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/ggml/include",
+				);
+				INFOPLIST_FILE = OpenASR/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/src",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-metal",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-cpu",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-blas",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/src",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-metal",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-cpu",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-blas",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				OTHER_LDFLAGS = (
+					"-lwhisper",
+					"-lggml",
+					"-lggml-base",
+					"-lggml-cpu",
+					"-lggml-metal",
+					"-lggml-blas",
+					"-rpath",
+					"@executable_path/../Frameworks",
+					"-framework",
+					Accelerate,
+					"-framework",
+					Metal,
+					"-framework",
+					MetalPerformanceShaders,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.openasr.app;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenASR/Bridge/OpenASR-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		65F61FE0E32C2542B6C97875 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Packages/whisper.cpp/include",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/ggml/include",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openasr.tests;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenASR/Bridge/OpenASR-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenASR.app/Contents/MacOS/OpenASR";
+			};
+			name = Release;
+		};
+		99BEE008A028589E287D4716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Packages/whisper.cpp/include",
+					"$(PROJECT_DIR)/Packages/whisper.cpp/ggml/include",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.openasr.tests;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "OpenASR/Bridge/OpenASR-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OpenASR.app/Contents/MacOS/OpenASR";
+			};
+			name = Debug;
+		};
+		CFCD18D2B482E09F896F3445 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50D9F9E5A39559F27DFF27E7 /* Build configuration list for PBXProject "OpenASR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFCD18D2B482E09F896F3445 /* Debug */,
+				1F0BAFAD01F51C0BF657C805 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		58DC7ADBEC11032A3B7374B6 /* Build configuration list for PBXNativeTarget "OpenASR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E811410D071516C58912C80 /* Debug */,
+				5EE994CBD08B3FD8FD79E9FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8667C49D38A39C000C1D2ABF /* Build configuration list for PBXNativeTarget "OpenASRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99BEE008A028589E287D4716 /* Debug */,
+				65F61FE0E32C2542B6C97875 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7123A56D86094F4616F5BF3C /* Project object */;
+}

@@ -1,0 +1,84 @@
+name: OpenASR
+options:
+  bundleIdPrefix: com.openasr
+  deploymentTarget:
+    macOS: "13.0"
+  xcodeVersion: "16.0"
+  generateEmptyDirectories: true
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+    ENABLE_HARDENED_RUNTIME: YES
+    CODE_SIGN_STYLE: Automatic
+    DEVELOPMENT_TEAM: ""
+    ALWAYS_SEARCH_USER_PATHS: NO
+    CLANG_CXX_LANGUAGE_STANDARD: "c++17"
+    CLANG_CXX_LIBRARY: "libc++"
+    GCC_C_LANGUAGE_STANDARD: "c11"
+
+targets:
+  OpenASR:
+    type: application
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - path: OpenASR
+        excludes:
+          - "**/*.md"
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.openasr.app
+        INFOPLIST_FILE: OpenASR/Resources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: OpenASR/Resources/OpenASR.entitlements
+        SWIFT_OBJC_BRIDGING_HEADER: OpenASR/Bridge/OpenASR-Bridging-Header.h
+        LIBRARY_SEARCH_PATHS:
+          - "$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/src"
+          - "$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src"
+          - "$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-metal"
+          - "$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-cpu"
+          - "$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-blas"
+        HEADER_SEARCH_PATHS:
+          - "$(PROJECT_DIR)/Packages/whisper.cpp/include"
+          - "$(PROJECT_DIR)/Packages/whisper.cpp/ggml/include"
+        OTHER_LDFLAGS:
+          - "-lwhisper"
+          - "-lggml"
+          - "-lggml-base"
+          - "-lggml-cpu"
+          - "-lggml-metal"
+          - "-lggml-blas"
+          - "-rpath"
+          - "@executable_path/../Frameworks"
+          - "-framework"
+          - "Accelerate"
+          - "-framework"
+          - "Metal"
+          - "-framework"
+          - "MetalPerformanceShaders"
+        LD_RUNPATH_SEARCH_PATHS:
+          - "$(inherited)"
+          - "@executable_path/../Frameworks"
+          - "$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/src"
+          - "$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src"
+          - "$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-metal"
+          - "$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-cpu"
+          - "$(PROJECT_DIR)/Packages/whisper.cpp/build-macos/ggml/src/ggml-blas"
+
+  OpenASRTests:
+    type: bundle.unit-test
+    platform: macOS
+    deploymentTarget: "13.0"
+    sources:
+      - OpenASRTests
+    dependencies:
+      - target: OpenASR
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.openasr.tests
+        SWIFT_OBJC_BRIDGING_HEADER: OpenASR/Bridge/OpenASR-Bridging-Header.h
+        HEADER_SEARCH_PATHS:
+          - "$(PROJECT_DIR)/Packages/whisper.cpp/include"
+          - "$(PROJECT_DIR)/Packages/whisper.cpp/ggml/include"
