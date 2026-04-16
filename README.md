@@ -17,7 +17,7 @@
 - **History with export** — Browse past transcriptions, search by text, and export as `.txt`, `.srt`, `.vtt`, or `.json`
 - **Multiple Whisper models** — Download and switch between Tiny, Base, Small, Medium, and Large v3 models
 - **100% local & private** — All inference runs on-device using Metal GPU acceleration; no data leaves your machine
-- **Menu bar app** — Minimal footprint, always accessible from the macOS menu bar
+- **Main window + menu bar** — Launches with a full window on startup; also accessible from the macOS menu bar icon
 - **Global hotkey** — Toggle recording with ⌘⇧R from any app
 
 ---
@@ -102,38 +102,60 @@ xcodebuild build \
 
 ## Usage
 
-### Menu Bar
+### First Launch
 
-After launching, OpenASR appears as a waveform icon (⌇) in the menu bar. Click it to open the popover.
+When you run OpenASR for the first time, a main window opens automatically and the app also appears as a waveform icon (⌇) in the menu bar.
 
-### Real-Time Transcription
+![Main window on launch](docs/screenshots/main-window.png)
 
-1. Open the popover and select a downloaded model from the dropdown
-2. Click **Record** (or press **⌘⇧R**)
+> **Note:** The **Start Recording** button is disabled until you download at least one Whisper model. See [Model Management](#model-management) below.
+
+### Step 1 — Download a Model
+
+Before you can transcribe anything you must download a model:
+
+1. Click the **Models** tab in the sidebar
+2. Pick a model and click **Download** (requires internet access to Hugging Face)
+3. Wait for the download to finish — progress is shown inline
+
+![Models tab](docs/screenshots/models-tab.png)
+
+Recommended starting point: **Whisper Base** (142 MB) — good balance of speed and accuracy for most use cases. If you only need English, pick **Whisper Base (EN)** for slightly better performance.
+
+### Step 2 — Real-Time Transcription
+
+1. Go to the **Transcribe** tab
+2. Click **Start Recording** (or press **⌘⇧R**)
 3. Speak — transcription appears live as you talk
-4. Click **Stop** — the final transcript is copied to your clipboard automatically
+4. Click **Stop Recording** — the final transcript is copied to your clipboard automatically
+
+![Transcription in progress](docs/screenshots/transcription.png)
 
 ### File Transcription
 
-1. Drag an audio or video file onto the drop zone in the popover or main window
+1. Drag an audio or video file onto the drop zone at the bottom of the Transcribe tab
 2. Alternatively, click **Choose File...** to open a file picker
 3. OpenASR extracts audio, chunks it into 30-second windows, and transcribes each chunk
 4. Progress is shown in real time; the result is saved to history and copied to clipboard
 
 ### History
 
-Click the arrow icon (↗) in the popover header to open the main window, then navigate to **History** to:
+Navigate to **History** in the sidebar to:
 - Browse all past transcriptions
 - Search by text content
 - Export selected records as TXT, SRT (subtitles), VTT (WebVTT), or JSON
 
 ### Model Management
 
-Navigate to **Models** in the main window (or **Settings → Models**) to:
+Navigate to **Models** in the sidebar to:
 - Download models from Hugging Face
 - See speed/accuracy ratings for each model
 - Switch the active model
 - Delete models you no longer need
+
+### Menu Bar
+
+The waveform icon in the menu bar opens a compact popover with the same Record/Stop controls and a file drop zone — useful when you want quick access without switching windows.
 
 ### Settings
 
